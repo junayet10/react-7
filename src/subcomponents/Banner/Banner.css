@@ -1,0 +1,111 @@
+.slider{
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+:root {
+	--text-color: #11161e;
+	--3d-primary-color: #151a32;
+	--comon-colot: #fff;
+	--1st-primary-color: #ff6f61;
+	--paragraph-color: #444;
+	--2nd-primary-color: #ff5645;
+	--background-color: #f1f1f1;
+	--bg: #f1f3f4;
+	--black: #000;
+        --font-family: "Josefin Sans", sans-serif;
+        --second-family: "Roboto", sans-serif;
+     
+}
+.slider .container h4{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: #1d1d1d;
+}
+.slider .container h2{
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 64px;
+line-height: 116%;
+color: #1d1d1d;
+}
+.slider .container p{
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+color: #1d1d1d;
+}
+.slider .container a{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 167%;
+text-align: center;
+color: var(--comon-colot);
+background-color: #ff5645;
+display: inline-block;
+padding: 10px 30px;
+text-decoration: none;
+}
+#slide .swiper-pagination{
+   text-align: left ;
+}
+#slide .drag{
+ 
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 23%;
+}
+#slide .swiper-pagination-bullet-active{
+    background-color: #ff5645;
+    width: 20px;
+    height: 5px;
+    border-radius: 0;
+}
+
+#slide .swiper-slide-active h2{
+ color: #ff5645;
+ transition-delay: 0.6s;
+ transform: translateY(0px);
+ opacity: 1;
+ visibility: visible;
+}
+#slide h2{
+    transform: translateY(78px);
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+#slide p{
+    transform: translateY(78px);
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+#slide .swiper-slide-active p{
+    transition-delay: 0.6s;
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+#slide h4{
+    transform: translateY(-78px);
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+#slide .swiper-slide-active h4{
+    transition-delay: 0.6s;
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
